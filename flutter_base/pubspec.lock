@@ -17,12 +17,21 @@ packages:
       url: "git://github.com/flutterchina/auto_size.git"
     source: git
     version: "0.0.1"
+  azlistview:
+    dependency: "direct main"
+    description:
+      name: azlistview
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.2"
   base_library:
     dependency: "direct main"
     description:
-      path: "../base_library"
-      relative: true
-    source: path
+      path: base_library
+      ref: HEAD
+      resolved-ref: "651f3355d0d391b4b29c9ae868f0d4baca28c19b"
+      url: "git://github.com/Sky24n/FlutterRepos.git"
+    source: git
     version: "0.0.1"
   boolean_selector:
     dependency: transitive
@@ -31,6 +40,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.4"
+  cached_network_image:
+    dependency: "direct main"
+    description:
+      name: cached_network_image
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.8.0"
   charcode:
     dependency: transitive
     description:
@@ -101,6 +117,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.3"
+  flukit:
+    dependency: "direct main"
+    description:
+      name: flukit
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   flustars:
     dependency: transitive
     description:
@@ -113,11 +136,51 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_cache_manager:
+    dependency: transitive
+    description:
+      name: flutter_cache_manager
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.2"
+  flutter_localizations:
+    dependency: "direct main"
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
+  http:
+    dependency: transitive
+    description:
+      name: http
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.12.0+2"
+  http_parser:
+    dependency: transitive
+    description:
+      name: http_parser
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.1.3"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.15.8"
+  lpinyin:
+    dependency: "direct main"
+    description:
+      name: lpinyin
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.7"
   matcher:
     dependency: transitive
     description:
@@ -145,7 +208,7 @@ packages:
       name: path_provider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.2"
+    version: "0.5.0+1"
   pedantic:
     dependency: transitive
     description:
@@ -153,6 +216,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.5.0"
+  pull_to_refresh:
+    dependency: "direct main"
+    description:
+      name: pull_to_refresh
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.6"
   quiver:
     dependency: transitive
     description:
@@ -167,6 +237,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.3.4"
+  rxdart:
+    dependency: "direct main"
+    description:
+      name: rxdart
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.22.0"
+  share:
+    dependency: "direct main"
+    description:
+      name: share
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.6.1+1"
   shared_preferences:
     dependency: transitive
     description:
@@ -186,6 +270,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.5.5"
+  sqflite:
+    dependency: transitive
+    description:
+      name: sqflite
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.6+1"
   stack_trace:
     dependency: transitive
     description:
@@ -235,6 +326,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.6"
+  url_launcher:
+    dependency: "direct main"
+    description:
+      name: url_launcher
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.5"
+  uuid:
+    dependency: transitive
+    description:
+      name: uuid
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.2"
   vector_math:
     dependency: transitive
     description:
@@ -242,6 +347,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.8"
+  webview_flutter:
+    dependency: "direct main"
+    description:
+      name: webview_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.10"
 sdks:
   dart: ">=2.2.0 <3.0.0"
   flutter: ">=1.5.0 <2.0.0"
