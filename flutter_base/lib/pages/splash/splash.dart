@@ -229,7 +229,7 @@ class SplashPageState extends State<SplashPage> {
                       style: new TextStyle(fontSize: 14.0, color: Colors.white),
                     ),
                     decoration: new BoxDecoration(
-                        color: Color(0x66000000),
+                        color: Colors.grey,
                         borderRadius: BorderRadius.all(Radius.circular(4.0)),
                         border: new Border.all(
                             width: 0.33, color: Colours.divider))),

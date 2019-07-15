@@ -32,9 +32,10 @@ class SplashPageState extends State<SplashPage> {
   }
 
   void _initAsync() async {
+    LogUtil.e('----------------- Splash Page start !!! -----------------');
     await SpUtil.getInstance();
     _loadSplashData();
-    Observable.just(1).delay(new Duration(milliseconds: 500)).listen((_) {
+    Observable.just(1).delay(new Duration(milliseconds: 1000)).listen((_) {
 //      SpUtil.putBool(Constant.key_guide, false);
       if (SpUtil.getBool(Constant.key_guide, defValue: true) &&
           ObjectUtil.isNotEmpty(_guideList)) {
@@ -67,6 +68,7 @@ class SplashPageState extends State<SplashPage> {
   }
 
   void _initBanner() {
+    LogUtil.e('Init Banner !!!!!');
     _initBannerData();
     setState(() {
       _status = 2;
@@ -87,24 +89,32 @@ class SplashPageState extends State<SplashPage> {
             new Align(
               alignment: Alignment.bottomCenter,
               child: new Container(
-                margin: EdgeInsets.only(bottom: 160.0),
-                child: new InkWell(
-                  onTap: () {
-                    _goMain();
+                margin: EdgeInsets.only(bottom: 40.0),
+                child: FlatButton(
+                  color: Colors.deepOrange,
+                  textColor: Colors.white,
+                  onPressed: (){
+                     _goMain();
                   },
-                  child: new CircleAvatar(
-                    radius: 48.0,
-                    backgroundColor: Colors.deepOrange,
-                    child: new Padding(
-                      padding: EdgeInsets.all(2.0),
-                      child: new Text(
-                        '立即体验',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.white, fontSize: 16.0),
-                      ),
-                    ),
-                  ),
+                  child: Text("立即开始",style: TextStyle(fontSize: 20.0),),
                 ),
+                // child: new InkWell(
+                //   onTap: () {
+                //     _goMain();
+                //   },
+                //   child: new CircleAvatar(
+                //     radius: 48.0,
+                //     backgroundColor: Colors.deepOrange,
+                //     child: new Padding(
+                //       padding: EdgeInsets.all(2.0),
+                //       child: new Text(
+                //         '立即体验',
+                //         textAlign: TextAlign.center,
+                //         style: TextStyle(color: Colors.white, fontSize: 16.0),
+                //       ),
+                //     ),
+                //   ),
+                // ),
               ),
             ),
           ],
@@ -121,6 +131,7 @@ class SplashPageState extends State<SplashPage> {
   }
 
   void _initSplash() {
+     LogUtil.e('Init Splash now !!!!!');
     if (_splashModel == null) {
       _goMain();
     } else {
@@ -151,7 +162,7 @@ class SplashPageState extends State<SplashPage> {
 
   Widget _buildSplashBg() {
     return new Image.asset(
-      Utils.getImgPath('splash_bg'),
+      Utils.getImgPath('splash_flash'),
       width: double.infinity,
       fit: BoxFit.fill,
       height: double.infinity,
@@ -207,7 +218,7 @@ class SplashPageState extends State<SplashPage> {
                     indicator: CircleSwiperIndicator(
                       radius: 4.0,
                       padding: EdgeInsets.only(bottom: 30.0),
-                      itemColor: Colors.black26,
+                      itemColor: Colors.deepOrange,
                     ),
                     children: _bannerList),
           ),

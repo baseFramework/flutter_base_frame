@@ -100,8 +100,7 @@ flutter:
     - assets/images/guide2.jpeg
     - assets/images/guide3.jpeg
     - assets/images/guide4.jpeg
-    - assets/images/guide5.png
-    - assets/images/splash_bg.png
+    - assets/images/splash_flash.png
 
     - packages/base_library/assets/ic_login_bg.png
     - packages/base_library/assets/ic_network_error.png

@@ -10,7 +10,7 @@ class HttpUtils {
         content: 'Flutter 常用工具类库',
         url: 'https://www.jianshu.com/p/425a7ff9d66e',
         imgUrl:
-            'https://raw.githubusercontent.com/Sky24n/LDocuments/master/AppImgs/flutter_common_utils_a.png',
+            'https://7seasdata.github.io/images/splash.jpg',
       );
     });
   }

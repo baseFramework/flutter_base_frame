@@ -24,13 +24,11 @@ class MyAppState extends State<MyApp> {
 
   @override
   void initState() {
-     
     super.initState();
     setLocalizedValues(localizedValues);
     _initAsync();
     _initListener();
   }
-  
 
   void _init() {
 //    DioUtil.openDebug();
@@ -68,9 +66,11 @@ class MyAppState extends State<MyApp> {
       if (model != null) {
         _locale = new Locale(model.languageCode, model.countryCode);
       } else {
-        _locale = null;
+        _locale = new Locale('zh','CN');
       }
-
+      LogUtil.e('----------- locale -------------');
+      LogUtil.e(_locale);
+      LogUtil.e('----------- locale -------------');
       String _colorKey = SpHelper.getThemeColor();
       if (themeColorMap[_colorKey] != null)
         _themeColor = themeColorMap[_colorKey];
