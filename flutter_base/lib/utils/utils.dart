@@ -5,7 +5,7 @@ import '../res/index.dart';
 import 'package:lpinyin/lpinyin.dart';
 
 class Utils {
-  static String getImgPath(String name, {String format: 'png'}) {
+  static String getImgPath(String name, {String format: 'jpeg'}) {
     return 'assets/images/$name.$format';
   }
 

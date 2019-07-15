@@ -21,7 +21,7 @@ class SplashPageState extends State<SplashPage> {
   List<Widget> _bannerList = new List();
 
   int _status = 0;
-  int _count = 3;
+  int _count = 4;
 
   SplashModel _splashModel;
 
@@ -94,7 +94,7 @@ class SplashPageState extends State<SplashPage> {
                   },
                   child: new CircleAvatar(
                     radius: 48.0,
-                    backgroundColor: Colors.indigoAccent,
+                    backgroundColor: Colors.deepOrange,
                     child: new Padding(
                       padding: EdgeInsets.all(2.0),
                       child: new Text(
@@ -229,7 +229,7 @@ class SplashPageState extends State<SplashPage> {
                       style: new TextStyle(fontSize: 14.0, color: Colors.white),
                     ),
                     decoration: new BoxDecoration(
-                        color: Color(0x66000000),
+                        color: Colors.deepOrange,
                         borderRadius: BorderRadius.all(Radius.circular(4.0)),
                         border: new Border.all(
                             width: 0.33, color: Colours.divider))),

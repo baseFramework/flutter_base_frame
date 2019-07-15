@@ -96,10 +96,11 @@ flutter:
     - assets/images/qrcode.png
     - assets/images/icon_wan_android.png
     - assets/images/ic_launcher_news.png
-    - assets/images/guide1.png
-    - assets/images/guide2.png
-    - assets/images/guide3.png
-    - assets/images/guide4.png
+    - assets/images/guide1.jpeg
+    - assets/images/guide2.jpeg
+    - assets/images/guide3.jpeg
+    - assets/images/guide4.jpeg
+    - assets/images/guide5.png
     - assets/images/splash_bg.png
 
     - packages/base_library/assets/ic_login_bg.png

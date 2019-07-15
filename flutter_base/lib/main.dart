@@ -24,14 +24,17 @@ class MyAppState extends State<MyApp> {
 
   @override
   void initState() {
+     
     super.initState();
     setLocalizedValues(localizedValues);
     _initAsync();
     _initListener();
   }
+  
 
   void _init() {
 //    DioUtil.openDebug();
+    LogUtil.e("------------ App build...... --------------");
     Options options = DioUtil.getDefOptions();
     options.baseUrl = Constant.server_address;
     String cookie = SpUtil.getString(BaseConstant.keyAppToken);
